@@ -1,0 +1,120 @@
+@color-de-fondo: lightblue;
+@color-de-parrafos: rgb(5, 5, 53);
+@color-de-hover: grey;
+@color-de-barra: rgb(124, 124, 68);
+@color-de-pie:gold;
+*{
+    // border: 1px solid red  ;
+    padding: 0;
+    margin: 0;
+    
+}
+
+    container,
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        color: coral;
+    }
+    .cuerpo p{
+        color: green;
+    }
+
+.container{
+    margin: 0 auto;
+    width: 75%;
+    background-color: @color-de-fondo;
+}
+
+    .encabezado{
+        margin: 0;
+        padding: 0;
+    }
+        .encabezado h1{
+            // text-align: right;
+            display: inline-block;
+            width: 36%;
+            margin-left: 10%;    
+            margin-top: 10px;
+        }
+
+            .e-derecha{
+                padding: 0;
+                width: 35%;               
+                text-align: right;
+                display: inline-block;
+                // margin-left: 22%;
+                vertical-align: top;
+            }
+
+            a,
+            .link{
+                text-decoration: none;
+                color: black;
+            }
+            .e-derecha p{
+                width: 100%;
+                margin: 0;
+            }
+            .e-derecha .busqueda{
+                width: 17%;
+                display: inline-block;
+                
+            }
+
+            .e-derecha form{   
+                display: inline-block;             
+                width: 45%;  
+                padding: 0;
+                margin: 0   ;
+            }
+            .e-derecha .campo{
+                // padding: 0;
+                min-height: 30px;
+                text-align: center;
+            }
+            
+            .e-derecha .btoGO{
+                width: 10%;
+                height: 30px;
+            }
+
+            .btoGO:hover{
+                cursor: pointer;
+                background-color: @color-de-hover;
+            }
+            
+    
+    .cuerpo{
+        min-height: 595px;
+        text-align: center;
+       
+    }
+        .cuerpo img{
+            width: 45%;
+            margin-right: 5%;
+            display: inline-block; 
+        }
+        .cuerpo p{
+            width: 45%;
+            display: inline-block; 
+            vertical-align:top;
+            margin-top: 15%;
+        }
+
+    .pie{
+        text-align: center;
+        min-height: 120px;
+        background-color:  @color-de-pie;
+    }
+        .pie p{
+            // display: inline;
+            width: 80%;
+            min-height: 5px;
+            margin-left: 10%;
+            background-color: @color-de-barra;
+        }
+        
+        .pie h6{
+            text-align: center;
+            margin-top: 4%;
+        }
